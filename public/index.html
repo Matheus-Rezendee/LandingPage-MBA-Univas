@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page MBA</title>
+    <link rel='stylesheet' type='text/css' href="styles.css">
+    <script src="./scripts.js"></script>
+</head>
+<body>
+    
+   <!-- Cabeçalho (MANTIDO ORIGINAL) -->
+<header>
+    <div class="header-content">
+        <img class="logo-univas" src="images/logo-univas.png" alt="Logo Univas">
+        <nav class="navigation">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section (MANTIDA ORIGINAL - SEM ALTERAÇÕES) -->
+<section id="inicio" class="hero">
+    <img src="images/Image and card.png" alt="Imagem de destaque" class="hero-image">
+    <div class="hero-content">
+        <h1>Torne-se um líder no mercado financeiro com o MBA da UNIVAS</h1>
+        <p class="hero-subtitle">Adquira uma formação de ponta em áreas essenciais para o futuro financeiro...</p>
+        <a href="#formulario" class="btn">Inscreva-se agora</a>
+    </div>
+</section>
+
+<!-- Seção do Formulário (AJUSTADA CONFORME IMAGEM) -->
+<section id="formulario" class="form-section">
+    <div class="form-intro">
+        <h2>Receba o Conteúdo Exclusivo sobre o MBA da UNIVAS!</h2>
+        <p>Descubra como o MBA em Banking, Finanças e Cooperativismo da UNIVAS pode transformar sua carreira! Preencha o formulário abaixo e receba informações detalhadas sobre o curso, seu conteúdo, vantagens e como ele pode impulsionar seu desenvolvimento profissional.</p>
+    </div>
+
+    <div class="form-container">
+        <div class="form-content">
+            <h3>Preencha para Receber Detalhes do MBA</h3>
+            <form class="mba-form">
+              <input type="text" name="nome" placeholder="Nome completo" required>
+              <input type="email" name="email" placeholder="E-mail profissional" required>
+              <input type="tel" name="telefone" placeholder="Telefone" required>
+              <input type="text" name="cargo" placeholder="Cargo atual" required>
+              
+              <select name="formacao" required>
+                <option value="">Formação acadêmica</option>
+                <option>Graduação Completa</option>
+                <option>Pós-Graduação</option>
+                <option>Mestrado</option>
+                <option>Doutorado</option>
+              </select>
+              
+              <select name="faixa_salarial" required>
+                <option value="">Faixa salarial</option>
+                <option>Até R$ 5.000</option>
+                <option>R$ 5.001 - R$ 10.000</option>
+                <option>R$ 10.001 - R$ 20.000</option>
+                <option>Acima de R$ 20.000</option>
+              </select>
+            
+              <button type="submit" class="btn-form">Receber Conteúdo Agora →</button>
+            </form>
+            
+        </div>
+        <img src="images/image-form.png" class="form-image" alt="MBA UNIVAS">
+    </div>
+</section>
+<!-- FAQ -- Coloquei essa parte como imagem-->>
+<section id="FAQ" class="perguntas">
+  <img src="images/FAQ.png" alt="perguntas" class="faq-image">
+</section>
+
+<!-- Depoimentos (MANTIDO ORIGINAL) -->
+<section id="feedbacks" class="testimonials">
+  <div class="carousel">
+    <div class="background-shape"></div>
+    <div class="carousel-container">
+      <img class="testimonial-image" src="images/depoimento-1.png" id="testimonial-img" />
+    </div>
+    <div class="headline">O que nossos alunos dizem?</div>
+    <img class="seta seta-direita" src="images/seta_direita.png" onclick="nextSlide()" />
+    <img class="seta seta-esquerda" src="images/seta_esquerda.png" onclick="prevSlide()" />
+  </div>
+</section>
+
+<!-- Sobre Nós (MANTIDO ORIGINAL) -->
+<section id="sobre" class="about">
+  <div class="sobre-nos">
+    <img class="campus" src="images/campus.png" alt="Imagem Univas" />
+    <div class="retangulo-azul"></div>
+    <div class="sobre-nos-titulo">Sobre nós</div>
+    <div class="texto-sobre-nos">
+      <p>
+        A UNIVAS é uma instituição de ensino superior com mais de 30 anos de história, dedicada a oferecer educação de qualidade e preparar profissionais para o mercado de trabalho. Nosso compromisso é com a excelência acadêmica e a formação de líderes para os desafios do futuro.
+        <br />
+        MBA em Banking, Finanças e Cooperativismo
+        <br />
+        O MBA da UNIVAS foi desenvolvido para profissionais que desejam se especializar no setor financeiro e cooperativo. Com um conteúdo atualizado e prático, o curso prepara os alunos para atuar com competência nas áreas de finanças, investimentos e cooperativismo, com flexibilidade para estudar online.
+      </p>
+    </div>
+    <div class="univas-nome">
+      UNIVAS - Universidade do Vale do Sapucaí
+    </div>
+  </div>
+</section>
+<!-- Rodapé (MANTIDO ORIGINAL) -->
+<footer>
+  <link rel="stylesheet" href="styles.css">
+  <div class="footer-content">
+    <!-- Imagem de fundo -->
+    <img class="bg-image" src="images/fundoAzul.png" alt="Fundo Azul" />
+
+    <!-- Mensagem MBA -->
+    <p class="mba-message">
+      Transforme sua carreira com o MBA da UNIVAS. Prepare-se para o futuro.
+    </p>
+
+    <!-- Links de navegação rápida -->
+    <nav class="quick-links">
+      <ul>
+        <li><a href="#sobre">Sobre nós</a></li>
+        <li><a href="#feedbacks">Feedbacks</a></li>
+        <li><a href="#formulario">Formulário</a></li>
+        <li><a href="#FAQ">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <!-- Outras informações não relacionadas a links -->
+    <div class="footer-info">
+      <div class="sobre">Sobre</div>
+      <div class="suporte">Suporte</div>
+    </div>
+
+    <!-- Contato -->
+    <div class="contact-info">
+      <p><a href="mailto:mba@univas.edu.br">Email: mba@univas.edu.br</a></p>
+      <p>Telefone: (35) xxxx-xxxx</p>
+      <p>Endereço: Unidade Central: Avenida Cel.<br /> 
+        Alfredo Cust dio de Paula, 320 - CEP 37553-068<br />
+         - Pouso Alegre, MG</p>
+    </div>
+
+    <!-- Ícones sociais -->
+    <div class="social-icons">
+      <a href="https://br.linkedin.com/school/univasbr/"><img class="social-icon" src="images/linkedin.png" alt="LinkedIn" /></a>
+      <a href="https://www.instagram.com/univas.br/"><img class="social-icon" src="images/instagram.png" alt="Instagram" /></a>
+      <a href="https://www.univas.edu.br"><img class="social-icon" src="images/web.png" alt="Website" /></a>
+    </div>
+
+    <!-- Imagem logo -->
+    <img class="logo" src="images/logoUnivas.png" alt="Logo Univas" />
+
+    <!-- Direitos autorais -->
+    <p class="copyright">
+      © 2025 UNIVAS. Todos os direitos reservados.
+    </p>
+  </div>
+</footer>
+</body>
+</html>
