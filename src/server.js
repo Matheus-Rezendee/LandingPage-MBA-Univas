@@ -11,14 +11,14 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '..', 'public')));
-app.use('/inscricao', routes);
+app.use('/', routes);
 
 // Rota principal (formulário)
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
 });
 
-// Rota para visualizar as inscrições
+// Rota para visualizar as inscrições em HTML
 app.get('/ver-inscricoes', (req, res) => {
   const sql = 'SELECT * FROM inscricoes';
 
@@ -75,7 +75,6 @@ app.get('/ver-inscricoes', (req, res) => {
   });
 });
 
-// Inicia o servidor
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
 });

@@ -3,7 +3,7 @@ const router = express.Router();
 const db = require('./database');
 
 // Rota POST /inscricao
-router.post('/', (req, res) => {
+router.post('/inscricao', (req, res) => {
   const { nome, email, telefone, cargo, formacao, faixa_salarial } = req.body;
 
   if (!nome || !email || !telefone || !cargo || !formacao || !faixa_salarial) {
@@ -26,7 +26,7 @@ router.post('/', (req, res) => {
 });
 
 // Rota GET /inscricoes - retorna todas as inscrições
-router.get('/todas', (req, res) => {
+router.get('/inscricoes', (req, res) => {
   db.all('SELECT * FROM inscricoes', [], (err, rows) => {
     if (err) {
       console.error("Erro ao buscar inscrições:", err.message);
@@ -38,7 +38,7 @@ router.get('/todas', (req, res) => {
 });
 
 // Rota GET /inscricao/:id - retorna uma inscrição específica
-router.get('/:id', (req, res) => {
+router.get('/inscricao/:id', (req, res) => {
   const id = req.params.id;
 
   db.get('SELECT * FROM inscricoes WHERE id = ?', [id], (err, row) => {
